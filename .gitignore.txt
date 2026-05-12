@@ -1,0 +1,11 @@
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+
+Data/*.RData
+Data/*.rds
+
+Results/*.html
+Results/*.pdf
+Results/*.png

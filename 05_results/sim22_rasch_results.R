@@ -1,0 +1,53 @@
+
+# Simulation 2.2 — Rasch Results
+
+# Load Rasch DIF results
+
+
+source("../03_irt_detection/sim22_2pl_multidim/sim22_rasch_detection.R")
+
+
+# Build summary table
+
+
+summary_rasch_2_2 <- data.frame()
+
+for(i in 1:length(results_rasch)){
+  
+  cm <- results_rasch[[i]]$confusion
+  
+  # Safe extraction
+  TN <- if(!is.null(cm["FALSE", "FALSE"])) cm["FALSE", "FALSE"] else 0
+  
+  FP <- if(!is.null(cm["FALSE", "TRUE"])) cm["FALSE", "TRUE"] else 0
+  
+  FN <- if(!is.null(cm["TRUE", "FALSE"])) cm["TRUE", "FALSE"] else 0
+  
+  TP <- if(!is.null(cm["TRUE", "TRUE"])) cm["TRUE", "TRUE"] else 0
+  
+  summary_rasch_2_2 <- rbind(
+    summary_rasch_2_2,
+    data.frame(
+      drift_type = results_rasch[[i]]$drift_type,
+      magnitude = results_rasch[[i]]$magnitude,
+      proportion = results_rasch[[i]]$proportion,
+      TP = TP,
+      FP = FP,
+      FN = FN,
+      TN = TN
+    )
+  )
+}
+
+
+# Performance metrics
+
+
+summary_rasch_2_2 <- summary_rasch_2_2 %>%
+  mutate(
+    sensitivity = TP / (TP + FN),
+    specificity = TN / (TN + FP),
+    accuracy = (TP + TN) / (TP + TN + FP + FN)
+  )
+
+summary_rasch_2_2
