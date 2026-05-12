@@ -252,7 +252,7 @@ This script exports:
 
 # Ethics
 
-Ethics approval was granted by the Ethics Review Board of the Faculty of Social and Behavioural Sciences at Utrecht University.
+Ethics approval was granted by the Ethics Review Board of the Faculty of Social and Behavioural Sciences at Utrecht University (25-1995).
 
 ---
 
