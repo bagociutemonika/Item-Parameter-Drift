@@ -255,7 +255,6 @@ The machine learning pipeline:
 The ML models use:
 
 - estimated ability values,
-- booklet indicators,
 - and administration information.
 
 ---
