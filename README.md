@@ -296,10 +296,8 @@ source("05_results/export_all_latex_tables.R")
 
 These scripts export:
 
-- sensitivity tables,
-- specificity tables,
-- accuracy tables,
-- and boundary-condition summaries.
+- sensitivity, specificity and accuracy tables,
+- and boundary-condition (sensitivity) summaries.
 
 Generated tables are saved in:
 
