@@ -21,49 +21,6 @@ Five simulation conditions were generated under progressively complex data-gener
 - multidimensionality,
 - and multi-country assessment structure.
 
-Across all simulation conditions, the study generated a total of **99 simulated datasets**.
-
----
-
-# Repository Structure
-
-```text
-├── 01_data_generation/
-│   ├── sim11/
-│   ├── sim12/
-│   ├── sim21/
-│   ├── sim22/
-│   └── sim23/
-│
-├── 02_data_investigation/
-│   ├── investigate_dataset.R
-│   └── run_all_investigations.R
-│
-├── 03_irt_detection/
-│   ├── sim11/
-│   ├── sim12/
-│   ├── sim21/
-│   ├── sim22/
-│   └── sim23/
-│
-├── 04_ml_detection/
-│   ├── sim11/
-│   ├── sim12/
-│   ├── sim21/
-│   ├── sim22/
-│   └── sim23/
-│
-├── 05_results/
-│   ├── sim11/
-│   ├── sim12/
-│   ├── sim21/
-│   ├── sim22/
-│   ├── sim23/
-│   ├── generate_thesis_figures.R
-│   └── export_all_appendix_tables.R
-│
-└── README.md
-```
 # Simulation Design
 
 ## Assessment Design
@@ -107,6 +64,46 @@ Across all simulation conditions, the study generated a total of **99 simulated 
 - **99 simulated datasets**
 
 ---
+
+# Repository Structure
+
+```text
+├── 01_data_generation/
+│   ├── sim11/
+│   ├── sim12/
+│   ├── sim21/
+│   ├── sim22/
+│   └── sim23/
+│
+├── 02_data_investigation/
+│   ├── investigate_dataset.R
+│   └── run_all_investigations.R
+│
+├── 03_irt_detection/
+│   ├── sim11/
+│   ├── sim12/
+│   ├── sim21/
+│   ├── sim22/
+│   └── sim23/
+│
+├── 04_ml_detection/
+│   ├── sim11/
+│   ├── sim12/
+│   ├── sim21/
+│   ├── sim22/
+│   └── sim23/
+│
+├── 05_results/
+│   ├── sim11/
+│   ├── sim12/
+│   ├── sim21/
+│   ├── sim22/
+│   ├── sim23/
+│   ├── generate_thesis_figures.R
+│   └── export_all_appendix_tables.R
+│
+└── README.md
+```
 
 # Reproducing the Study
 
