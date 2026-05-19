@@ -320,10 +320,8 @@ Outputs/
 │   └── robustness figures
 │
 ├── latex_tables/
-│   ├── sensitivity tables
-│   ├── specificity tables
-│   └── accuracy tables
-│
+│   
+│   
 └── boundary_table.tex
 ```
 
