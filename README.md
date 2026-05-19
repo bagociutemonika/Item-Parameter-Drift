@@ -275,9 +275,7 @@ source("05_results/sensitivity_figure.R")
 These scripts reproduce:
 
 - sensitivity heatmaps,
-- robustness figures,
-- specificity plots,
-- and other thesis visualizations.
+- robustness figures.
 
 Generated figures are saved in:
 
